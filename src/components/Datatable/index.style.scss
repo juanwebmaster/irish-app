@@ -1,0 +1,138 @@
+.datatable {
+  thead {
+    tr {
+      th {
+        font-family: Rubik, sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+        color: #3c3c3c;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        span {
+          background-color: #3e8bdc;
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          border-radius: 16px;
+          color: white;
+          margin: auto;
+          justify-content: center;
+        }
+        &.cell-select {
+          width: 24px;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      th {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        span {
+          background-color: #3e8bdc;
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          border-radius: 16px;
+          color: white;
+          margin: auto;
+          justify-content: center;
+          &.blank {
+            border: 3px solid #EAEAEA;
+            background: transparent;
+            svg {
+              display: none;
+            }
+          }
+        }
+      }
+      td {
+        font-family: Rubik, sans-serif;
+        font-size: 22px;
+        
+        padding-top: 16px;
+        padding-bottom: 16px;
+        vertical-align: middle;
+        &.status {
+          width: 75px;
+        }
+        &.action {
+          font-size: 30px;
+          svg {
+            margin-right: 5px;
+          }
+          .view {
+            color: #3E8BDC;
+          }
+          .check {
+            color: #1BC13B;
+          } 
+          .cancel {
+            color: #F03030;
+          }
+        }
+        span {
+          display: block;
+          width: 18px;
+          height: 18px;
+          margin: auto;
+          border-radius: 9px;
+          &.green {
+            background-color: #1bc13b;
+          }
+          &.amber {
+            background-color: #d99007;
+          }
+          &.red {
+            background-color: #f03030;
+          }
+        }
+      }
+    }
+  }
+}
+.datatable-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  padding-top: 55px;
+  .button-group {
+    button {
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 22px;
+      border: none;
+      outline: none;
+      svg {
+        margin-right: 5px;
+      }
+      &.success-selected {
+        background-color: #1BC13B;
+        color: white;
+        margin-right: 25px;
+      }
+      &.success-all {
+        color: #1BC13B;
+        background-color: white;
+        border: 1px solid #1BC13B;
+      }
+      &.reject-selected {
+        background-color: #F03030;
+        color: white;
+        margin-right: 25px;
+      }
+      &.reject-all {
+        color: #F03030;
+        background-color: white;
+        border: 1px solid #F03030;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.content {
+  background-color: #EEF0F5;
+  font-family: Rubik;
+  height: 100vh;
+}
+
+.header {
+  height: 268px;
+  background-color: white;
+}
+
+.header .top-bar {
+  height: 80px;
+  background-color: #13202D;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .top-bar .title {
+  padding-left: 65px;
+  padding-top: 35px;
+  color: white;
+  font-size: 20px;
+  
+}
+
+.header .top-bar .avatar {
+  padding-top: 17px;
+  padding-right: 27px;
+  padding-bottom: 15px;
+  color: white;
+  display: flex;
+  p {
+    margin-top: 13px;
+  }
+}
+
+.header .menu-bar {
+  display: flex;
+  padding-left: 63.5px;
+  padding-top: 32.8px;
+}
+
+.header .menu-bar .menu {
+  padding-left: 100px;
+  display: flex;
+}
+
+.header .menu-bar .menu-bar-logo {
+  padding-right: 100px;
+}
+

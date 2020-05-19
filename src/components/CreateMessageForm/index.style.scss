@@ -1,0 +1,28 @@
+.create-message-container {
+  margin: 66px 75px 90px 73px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header {
+  align-self: start;
+  margin-top: 34px;
+  margin-left: 59px;
+  font-size: 44px;
+  color: #3C3C3C;
+}
+
+.section-body {
+  display: flex;
+  position: relative;
+  padding-top: 97px;
+  padding-left: 411px;
+}
+
+.message-type {
+  display: flex;
+  flex-direction: column;
+}

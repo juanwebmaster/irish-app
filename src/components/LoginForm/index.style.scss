@@ -1,0 +1,54 @@
+.form-body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 374px;
+  width: 403px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  
+}
+
+.input-username {
+  margin: 41px 45px 20px 44px;
+  padding-bottom: 17.5px;
+  border:none;
+  border-bottom: 2px solid #EAEAEA;
+  font-size: 31px;
+  
+}
+
+.input-username:focus {
+  outline: none;
+}
+
+.input-password {
+  margin: 21px 45px 10px 44px;
+  padding-bottom: 17.5px;
+  border:none;
+  font-size: 31px;
+  border-bottom: 2px solid #EAEAEA;
+}
+
+.input-password:focus {
+  outline: none;
+}
+
+.forgot-password {
+  margin: 7.5px 45px 10px 44px;
+}
+
+.forgot-password p {
+  color: #919191;
+  font-style: italic;
+  display: flex;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.forgot-password p a {
+  font-style: normal;
+  color: #3E8BDC;
+  font-weight: 700;
+}

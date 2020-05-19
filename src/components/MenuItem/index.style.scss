@@ -1,0 +1,19 @@
+.menu-item {
+  border: none;
+  border-left: 2px solid #EAEAEA;
+  display: flex;
+  flex-direction: column;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.menu-name {
+  position: absolute;
+  padding-top: 82px;
+  align-self: center;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
