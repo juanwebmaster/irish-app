@@ -2,7 +2,6 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 374px;
   width: 403px;
   margin: auto;
   border-radius: 12px;
@@ -51,4 +50,18 @@
   font-style: normal;
   color: #3E8BDC;
   font-weight: 700;
+}
+
+.login-button {
+  font-size: 31px;
+  color: white;
+  font-weight: 500;
+  background-color: #A49362;
+  padding: 16px 123px 15px 116px;
+  margin: 22px 45px 31px 44px;
+  border-radius: 12px;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
 }
