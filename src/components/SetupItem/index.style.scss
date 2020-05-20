@@ -1,23 +1,19 @@
 .setup-item {
-  width: 303px;
-  height: 243px;
+  width: 300px;
+  height: 240px;
   background-color: #ffffff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 12px;
-  margin-left: 38px;
-  margin-right: 38px;
-}
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
 
-.item-icon {
-  padding-top: 58px;
-}
-.item-name {
-  position: relative;
-  padding-bottom: 60px;
-  align-self: center;
-}
-
-.setup-item:hover {
-  cursor: pointer;
-  opacity: 0.8;
+  .item-icon {
+    display: table;
+    height: 96px;
+  }
+  .item-name {
+    font-size: 24px;
+  }
 }

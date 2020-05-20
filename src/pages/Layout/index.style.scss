@@ -1,6 +1,5 @@
 .content {
-  padding-top: 66px;
-  background-color: #EEF0F5;
+  background-color: #eef0f5;
   font-family: Rubik;
   height: 100vh;
 }
@@ -12,7 +11,7 @@
 
 .header .top-bar {
   height: 80px;
-  background-color: #13202D;
+  background-color: #13202d;
   display: flex;
   justify-content: space-between;
 }
@@ -22,7 +21,6 @@
   padding-top: 35px;
   color: white;
   font-size: 20px;
-  
 }
 
 .header .top-bar .avatar {
@@ -38,16 +36,21 @@
 
 .header .menu-bar {
   display: flex;
-  padding-left: 63.5px;
+  flex-direction: row;
+  justify-content: space-around;
   padding-top: 32.8px;
 }
 
 .header .menu-bar .menu {
-  padding-left: 100px;
+  padding: 0 40px;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex: 7;
 }
 
 .header .menu-bar .menu-bar-logo {
-  padding-right: 100px;
+  padding: 0px 40px;
+  display: flex;
+  flex: 3;
 }
-

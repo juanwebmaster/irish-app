@@ -1,23 +1,35 @@
 import React, { Fragment } from "react";
-import "./index.style.scss";
+import { Route, Router, Switch, useLocation } from "react-router-dom";
+
+import history from "../../history";
 import Routes from "../../constants/Routes";
+
 import Home from "../Home";
 import Setup from "../Setup";
 import Messaging from "../Messaging";
 import Meetings from "../Meetings";
 import Statistics from "../Statistics";
-import { Route, Router, Switch } from "react-router-dom";
-import History from "../../constants/History";
-import AvatarImg from "../../assets/avatar.png";
-import Logo from "../../assets/logo.png";
-import HomeIcon from "../../assets/home_icon.png";
-import MeetingsIcon from "../../assets/meetings_icon.png";
-import MessagingIcon from "../../assets/messaging_icon.png";
-import StatisticsIcon from "../../assets/statistics_icon.png";
-import SetupIcon from "../../assets/setup_icon.png";
 import MenuItem from "../../components/MenuItem";
 import CreateMessageForm from "../../components/CreateMessageForm";
+
+import AvatarImg from "../../assets/avatar.png";
+import Logo from "../../assets/logo.png";
+import HomeSelIcon from "../../assets/home_icon_sel.png";
+import HomeIcon from "../../assets/home_icon.png";
+import MeetingsIcon from "../../assets/meetings_icon.png";
+import MeetingsSelIcon from "../../assets/meetings_icon.png";
+import MessagingIcon from "../../assets/messaging_icon.png";
+import MessagingSelIcon from "../../assets/messaging_icon_sel.png";
+import StatisticsIcon from "../../assets/statistics_icon.png";
+import StatisticsSelIcon from "../../assets/statistics_icon_sel.png";
+import SetupIcon from "../../assets/setup_icon.png";
+import SetupSelIcon from "../../assets/setup_icon_sel.png";
+
+import "./index.style.scss";
+
 const Layout = () => {
+  const { pathname } = useLocation();
+
   return (
     <Fragment>
       <div className="header">
@@ -33,16 +45,48 @@ const Layout = () => {
             <img src={Logo} alt="description"></img>
           </div>
           <div className="menu">
-            <MenuItem menuName="Home" menuIcon={HomeIcon} />
-            <MenuItem menuName="Meetings" menuIcon={MeetingsIcon} />
-            <MenuItem menuName="Messaging" menuIcon={MessagingIcon} />
-            <MenuItem menuName="Statistics" menuIcon={StatisticsIcon} />
-            <MenuItem menuName="Setup" menuIcon={SetupIcon} />
+            <MenuItem
+              menuName="Home"
+              menuIcon={pathname === Routes.home ? HomeSelIcon : HomeIcon}
+              path={Routes.home}
+            />
+            <MenuItem
+              menuName="Meetings"
+              menuIcon={
+                pathname === Routes.meetings ? MeetingsSelIcon : MeetingsIcon
+              }
+              path={Routes.meetings}
+            />
+            <MenuItem
+              menuName="Messaging"
+              menuIcon={
+                pathname === Routes.messaging ? MessagingSelIcon : MessagingIcon
+              }
+              path={Routes.messaging}
+            />
+            <MenuItem
+              menuName="Statistics"
+              menuIcon={
+                pathname === Routes.statistics
+                  ? StatisticsSelIcon
+                  : StatisticsIcon
+              }
+              path={Routes.statistics}
+            />
+            <MenuItem
+              menuName="Setup"
+              menuIcon={
+                pathname === Routes.setup
+                  ? SetupSelIcon
+                  : SetupIcon
+              }
+              path={Routes.setup}
+            />
           </div>
         </div>
       </div>
       <div className="content">
-        <Router history={History}>
+        <Router history={history}>
           <Switch>
             <Route
               exact

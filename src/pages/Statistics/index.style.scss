@@ -1,0 +1,28 @@
+.statistics {
+  padding: 24px 48px;
+
+  .row {
+    padding: 24px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    padding: 24px;
+    height: 360px;
+
+    &__small {
+      height: 160px;
+    }
+    &-label {
+      font-size: 18px;
+      text-align: left;
+    }
+    &-value {
+      color: #3e8bdc;
+      font-size: 64px;
+      text-align: left;
+    }
+  }
+}
